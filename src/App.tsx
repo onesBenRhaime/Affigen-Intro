@@ -1,9 +1,66 @@
-import Navbar from "./components/Navbar";
-
 function App() {
 	return (
 		<>
-			<Navbar />
+			{/* Navbar Start */}
+			<div className="container-fluid sticky-top">
+				<div className="container">
+					<nav className="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-5">
+						<a href="index.html" className="navbar-brand d-lg-none">
+							<h1 className="text-primary m-0">
+								Lab<span className="text-dark">sky</span>
+							</h1>
+						</a>
+						<button
+							type="button"
+							className="navbar-toggler me-0"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarCollapse"
+						>
+							<span className="navbar-toggler-icon" />
+						</button>
+						<div className="collapse navbar-collapse" id="navbarCollapse">
+							<div className="navbar-nav">
+								<a href="#" className="nav-item nav-link active">
+									Home
+								</a>
+								<a href="#" className="nav-item nav-link">
+									Shop
+								</a>
+								<a href="#" className="nav-item nav-link">
+									Services
+								</a>
+								<div className="nav-item dropdown">
+									<a
+										href="#"
+										className="nav-link dropdown-toggle"
+										data-bs-toggle="dropdown"
+									>
+										All products
+									</a>
+									<div className="dropdown-menu bg-light m-0">
+										<a href="#" className="dropdown-item">
+											AFFIDYE®
+										</a>
+										<a href="#" className="dropdown-item">
+											AFFIDYE®
+										</a>
+										<a href="#" className="dropdown-item">
+											AlliASSAY®
+										</a>
+										<a href="#" className="dropdown-item">
+											AffIBIOTICS®
+										</a>
+										<a href="#" className="dropdown-item">
+											AttiCHECK®
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			{/* Navbar End */}
 			{/* Carousel Start */}
 			<div className="container-fluid header-carousel px-0 mb-5">
 				<div
@@ -150,6 +207,77 @@ function App() {
 				</div>
 			</div>
 			{/* About End */}
+			<div>
+				{/* Footer Start */}
+				<div
+					className="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn"
+					data-wow-delay="0.1s"
+				>
+					<div className="container">
+						<div className="row g-5 py-5">
+							<div className="col-lg-6 pe-lg-5">
+								<a href="index.html" className="navbar-brand">
+									<h1 className="h1 text-primary mb-0">
+										Affi<span className="text-white">GEN</span>
+									</h1>
+								</a>
+								<p className="fs-5 mb-4">
+									AffiGEN Inc. Manufacture & Supply of Diagnostic & Research
+									Reagents
+								</p>
+								<p>
+									<i className="fa fa-map-marker-alt me-2" />
+									Manufacture & Supply of Diagnostic & Research Reagents
+								</p>
+								<p>
+									<i className="fa fa-phone-alt me-2" />
+									(800) 660-1620
+								</p>
+								<p>
+									<i className="fa fa-envelope me-2" />
+									info@affigen.com
+								</p>
+								<div className="d-flex mt-4">
+									<a className="btn btn-lg-square btn-primary me-2" href="#">
+										<i className="fab fa-twitter" />
+									</a>
+									<a className="btn btn-lg-square btn-primary me-2" href="#">
+										<i className="fab fa-facebook-f" />
+									</a>
+									<a className="btn btn-lg-square btn-primary me-2" href="#">
+										<i className="fab fa-linkedin-in" />
+									</a>
+									<a className="btn btn-lg-square btn-primary me-2" href="#">
+										<i className="fab fa-instagram" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* Footer End */}
+				{/* Copyright Start */}
+				<div className="container-fluid copyright bg-dark text-white-50 py-4">
+					<div className="container">
+						<div className="row">
+							<div className="col-md-6 text-center text-md-start">
+								<p className="mb-0">
+									© <a href="#">Your Site Name</a>. All Rights Reserved.
+								</p>
+							</div>
+							<div className="col-md-6 text-center text-md-end">
+								{/*/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. *** /*/}
+								<p className="mb-0">
+									Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+									<br />
+									Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* Copyright End */}
+			</div>
 		</>
 	);
 }
